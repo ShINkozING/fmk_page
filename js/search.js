@@ -1,5 +1,5 @@
 const imageInput = document.querySelector('#img-search')
-let inputSearch = document.querySelector('.header__right-input')
+const inputSearch = document.querySelector('.header__right-input')
 let focusSearch = document.querySelector('#input-search')
 console.log(inputSearch);
 
@@ -9,6 +9,6 @@ imageInput.addEventListener('click', () => {
     
 })
 
-if(focusSearch !== focusSearch.focus()) {
-    inputSearch.classList.remove('is-active')
+focusSearch.onblur = () => {
+    inputSearch.classList.remove('is-active') 
 }
