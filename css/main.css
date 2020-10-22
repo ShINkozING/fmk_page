@@ -28,7 +28,7 @@ body {
 .content {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(autofill, minmax(330px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
     grid-gap: 50px;
 }
 
