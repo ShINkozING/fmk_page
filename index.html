@@ -12,6 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/fonts/geometria/stylesheet.css">
     </head>
     <body>
         <div class="wrapper">
@@ -85,11 +86,50 @@
                 </div>  
             </header>
             <div class="info-bar">
-                <div class="col-lg-3">
-                    <span>Курсы валют $80.21 € 80.21</span>
+                <div class="info-bar__exchange">
+                    <span>Курсы валют</span>
+                    <div class="dollar">
+                        <p>$ </p>
+                        <p id="randomised"></p>
+                        <div class="arrow1"></div>
+                    </div>
+                    <div class="euro">
+                        <p>€ </p>
+                        <p id="randomiseeur"></p>
+                        <div class="arrow2"></div>
+                    </div>
                 </div>
-                <div class="col-lg-2"><span>Биржевые индексы</span></div>
-                <div class="col-lg-7"><span>Индекс сегодня: FBR - 22.93 ICFCR - 15.33 ICFРR - 15.66 IMCPR - 28.92 IVGR - 82.02</span></div>
+                <div class="info-bar__index">
+                    <span>Биржевые индексы</span>
+                </div>
+                <div class="info-bar__current-index">
+                    <span>Индексы сегодня:</span>
+                    <div class="info-bar__current-item">
+                        <p>FBR - </p>
+                        <p></p>
+                        <div></div>
+                    </div>
+                    <div class="info-bar__current-item">
+                        <p>ICFCR - </p>
+                        <p></p>
+                        <div></div>
+                    </div>
+                    <div class="info-bar__current-item">
+                        <p>ICFPR - </p>
+                        <p></p>
+                        <div></div>
+                    </div>
+                    <div class="info-bar__current-item">
+                        <p>IMCPR - </p>
+                        <p></p>
+                        <div></div>
+                    </div>
+                    <div class="info-bar__current-item">
+                        <p>IVGR - </p>
+                        <p></p>
+                        <div></div>
+                    </div>
+                </div>
             </div>
             <div class="sidebar col-lg-2 col-md-2">
                 <div class="sidebar__stocks">
@@ -136,8 +176,9 @@
         <script src="js/jquery-3.5.1.min.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/search.js"></script>
-        <script src="js/index.js"></script>
+        <!-- <script src="js/base.js"></script>
         <script src="js/modal.js"></script>
-        <script src="js/base.js"></script>
+        <script src="js/index.js"></script> -->
+        <script src="js/randomise.js"></script>
     </body>
 </html>

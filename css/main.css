@@ -5,9 +5,28 @@
     margin: 0 auto;
 }
 
+
 body {
     background-color: #E5E5E5;
+    font-family: Geometria, sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+a {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+p, button {
+    font-weight: 300;
+}
+
+span {
+    font-size: 16px;
+    line-height: 20px;
+}
+
 /* Header */
 .header span {
     color: #F7F8FC;
@@ -71,12 +90,69 @@ body {
     justify-content: space-between;
 }
 
+/* info-bar  */
+
 .info-bar {
     height: 38px;
     background: #3E4049;
     color: #FFFFFF;
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;   
+}
+
+.info-bar__exchange span {
+    margin-right: 20px;
+    margin-left: 35px;
+}
+
+.info-bar__exchange {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+}
+
+.dollar, .euro {
+    display: flex;
+    align-items: center;
+    
+}
+
+.dollar p, 
+.euro p {
+    margin-bottom: 0;
+}
+
+.dollar {
+    margin-right: 20px;
+}
+
+.arrow1,
+.arrow2 {
+    margin-left: 8px;
+}
+
+.info-bar__index {
+    margin-right: auto;
+    margin-left: 50px;
+}
+
+.info-bar__current-index {
+    margin-right: 900px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-bar__current-item {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.info-bar__current-item p {
+    margin-bottom: 0;
 }
 
 /* .header-left */
@@ -86,6 +162,7 @@ body {
     align-items: center;
     height: 84px;
     margin-left: 35px;
+    font-weight: 800;
 }
 
 .header__nav {
@@ -166,6 +243,7 @@ body {
     width: 46px;
     height: 46px;
     margin-right: 31px;
+    margin-left: 31px;
 }
 
 .img {
