@@ -9,10 +9,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/media.css">
         <link rel="stylesheet" href="/fonts/geometria/stylesheet.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <div class="wrapper">
@@ -30,7 +31,7 @@
                                 <a href="http://">Настройки</a>
                             </div>
                             <div class="header__nav-item dropdown">
-                                <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <a id="drop1" href="#" class="dropdown-toggle">
                                 Мой счёт
                                 </a>
                                 <ul class="dropdown-menu">
@@ -47,8 +48,8 @@
                 </div>
                 <div class="header__right">
                     <div class="header__right-links">
-                        <div id="header__modal" class="header__right-item">
-                            <a href="http://">Внести предложение</a>
+                        <div class="header__right-item">
+                            <a data-toggle="modal" data-target=".bs-example-modal-sm" href="http://">Внести предложение</a>
                         </div>
                         <div class="header__right-item">
                             <a href="http://">Обратный звонок</a>
@@ -78,12 +79,13 @@
                             <span>Fedor Nababkin</span>
                         </div>
                         <div class="img-container">
-                            <div class="img">
+                            <div class="img-user">
                                 <img src="img/users-img.png" alt="">
                             </div>
                         </div>
                     </div>
-                </div>  
+                </div>
+                
             </header>
             <div class="info-bar">
                 <div class="info-bar__exchange">
@@ -111,12 +113,12 @@
                     </div>
                     <div class="info-bar__current-item">
                         <p>ICFCR - </p>
-                        <p></p>
+                        <p id="item-value"></p>
                         <div></div>
                     </div>
                     <div class="info-bar__current-item">
                         <p>ICFPR - </p>
-                        <p></p>
+                        <p id="item-value"></p>
                         <div></div>
                     </div>
                     <div class="info-bar__current-item">
@@ -131,46 +133,67 @@
                     </div>
                 </div>
             </div>
-            <div class="sidebar col-lg-2 col-md-2">
-                <div class="sidebar__stocks">
-                    <div class="sidebar__stocks-content">
-                        <img src="img/mdi_assignment.svg" alt="">
-                        <span>Пакеты</span>
-                    </div>
-                    <div class="sidebar__stocks-filter">
-                        <div class="sidebar__stocks-item">
-                            <button>Действующие</button>
-                        </div>
-                        <div class="sidebar__stocks-item">
-                            <button>Отключенные</button>
-                        </div>
-                        <div class="sidebar__stocks-item">
-                            <button>На тестовом периоде</button>
-                        </div>
-                        <div class="sidebar__stocks-item">
-                            <button>Подключить пакет</button>
-                        </div>
-                    </div>
-                    <div class="sidebar__stocks-action">
+            <div class="wrap">
+                <div class="sidebar col-lg-2 col-md-2">
+                    <div class="sidebar__stocks">
                         <div class="sidebar__stocks-content">
-                            <img src="img/mdi_near_me.svg" alt="">
-                            <span>Действия</span>
+                            <img src="img/mdi_assignment.svg" alt="">
+                            <span>Пакеты</span>
                         </div>
-                        <div class="sidebar__stocks-item">
-                            <button>Отключить</button>
+                        <div class="sidebar__stocks-filter">
+                            <div class="sidebar__stocks-item">
+                                <button>Действующие</button>
+                            </div>
+                            <div class="sidebar__stocks-item">
+                                <button>Отключенные</button>
+                            </div>
+                            <div class="sidebar__stocks-item">
+                                <button>На тестовом периоде</button>
+                            </div>
+                            <div class="sidebar__stocks-item">
+                                <button>Подключить пакет</button>
+                            </div>
                         </div>
-                        <div class="sidebar__stocks-item">
-                            <button>Пройти тест</button>
+                        <div class="sidebar__stocks-action">
+                            <div class="sidebar__stocks-content">
+                                <img src="img/mdi_near_me.svg" alt="">
+                                <span>Действия</span>
+                            </div>
+                            <div class="sidebar__stocks-item">
+                                <button>Отключить</button>
+                            </div>
+                            <div class="sidebar__stocks-item">
+                                <button>Пройти тест</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="sidebar__stocks-special">
-                        <img src="img/mdi_grade.svg" alt="">
-                        <button>Персональное предложение</button>
+                        <div class="sidebar__stocks-special">
+                            <img src="img/mdi_grade.svg" alt="">
+                            <button>Персональное предложение</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="main-content col-lg-10 col-md-10">
-                
+                <div class="content">
+                    <div class="content__item">
+                        <div class="content__item-img">
+                            <img src="/img/pack/jamaican-jerk-chicken 1.svg" alt="">
+                        </div>
+                        <div class="content__item-name">
+                            <h3>Пакет №1</h3>
+                            <h3>"Федеральный"</h3>
+                        </div>
+                        <div class="content__item-description">
+                            <p>Птицеводческая промышленность</p>
+                            <span>Приволжский ФО РФ</span>
+                        </div>
+                        <div class="content__item-btn">
+                            <button>Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="content__item"></div>
+                    <div class="content__item"></div>
+                    <div class="content__item"></div>
+                    <div class="content__item"></div>
+                </div>
             </div>
         </div>
         <script src="js/jquery-3.5.1.min.js"></script>
@@ -180,5 +203,6 @@
         <script src="js/modal.js"></script>
         <script src="js/index.js"></script> -->
         <script src="js/randomise.js"></script>
+        
     </body>
 </html>

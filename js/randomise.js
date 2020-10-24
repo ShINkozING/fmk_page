@@ -6,9 +6,6 @@ let result2 = Math.floor(getRandomFloat(80, 82) * 100) / 100
 let arrow1 = document.querySelector('.arrow1')
 let arrow2 = document.querySelector('.arrow2')
 
-console.log(arrow1);
-
-
 if(result < result2) {
     arrow1.innerHTML += `<img class='arrowDown' src="img/ArrowDown.svg" alt="">`    
     arrow2.innerHTML += `<img class='arrowUp' src="img/ArrowUp.svg" alt="">`
@@ -17,6 +14,7 @@ if(result < result2) {
     arrow2.innerHTML += `<img class='arrowDown' src="img/ArrowDown.svg" alt="">`
 } 
 
-document.querySelector("#randomised").innerHTML = result;
+document.querySelector('#randomised').innerHTML = result;
 document.querySelector('#randomiseeur').innerHTML = result2;
+
 

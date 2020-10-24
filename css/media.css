@@ -1,0 +1,48 @@
+@media (max-width: 1351px) {
+    .user-name {
+        display: none;
+    }
+    .img-container {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1161px) {
+    .sidebar__stocks-special {
+        margin-left: -5px;
+    }
+    .sidebar__stocks-special button {
+        margin-left: -10px;
+    }
+    .input-search {
+        width: 150px;
+    }
+    .header__right-input {
+        width: 150px;
+    }
+    .header__right-item {
+        margin-right: 10px;
+    }
+    .header__nav-item {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    .sidebar__stocks-special {
+    margin-left: 0;
+    }
+    
+}
+
+@media (max-width: 1060px) {
+    .header__right-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header__nav-list {
+        padding-left: 10px;
+    }
+}
