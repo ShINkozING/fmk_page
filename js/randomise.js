@@ -1,3 +1,5 @@
+// изменение курсов валют после обновление страниц
+
 function getRandomFloat(min, max) {
     return Math.random() * (max - min) + min;
 }
@@ -18,3 +20,28 @@ document.querySelector('#randomised').innerHTML = result;
 document.querySelector('#randomiseeur').innerHTML = result2;
 
 
+// динамическое изменение текущих индексов
+
+const divP = document.querySelectorAll('#item-value')
+let dinArrow = document.querySelectorAll('.arrow123')
+
+
+console.log(divP)
+
+let setRandomValue = function() {
+    let timerId = setInterval(() => {
+        divP.forEach((dItem) =>{
+            let result3 = Math.floor(getRandomFloat(15, 20) * 100) / 100
+            dItem.innerHTML = result3
+            dinArrow.forEach((arrowChage) => {
+                if (result3 > '17') {
+                    arrowChage.innerHTML = `<img class='arrowUp' src="img/ArrowUp.svg" alt="">`
+                } else {
+                    arrowChage.innerHTML = `<img class='arrowDown' src="img/ArrowDown.svg" alt="">`
+                }
+            })
+        })
+    }, 2000);
+}
+
+setRandomValue()

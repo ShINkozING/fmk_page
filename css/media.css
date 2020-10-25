@@ -46,3 +46,12 @@
         padding-left: 10px;
     }
 }
+
+@media (max-width: 1186px) {
+    .info-bar__index {
+        display: none;
+    }
+    .info-bar__current-index {
+        margin-left: 15px;
+    }
+}

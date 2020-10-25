@@ -48,8 +48,8 @@
                 </div>
                 <div class="header__right">
                     <div class="header__right-links">
-                        <div class="header__right-item">
-                            <a data-toggle="modal" data-target=".bs-example-modal-sm" href="http://">Внести предложение</a>
+                        <div class="header__right-item"> 
+                            <a data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" href="http://">Внести предложение</a>
                         </div>
                         <div class="header__right-item">
                             <a href="http://">Обратный звонок</a>
@@ -85,7 +85,6 @@
                         </div>
                     </div>
                 </div>
-                
             </header>
             <div class="info-bar">
                 <div class="info-bar__exchange">
@@ -108,28 +107,28 @@
                     <span>Индексы сегодня:</span>
                     <div class="info-bar__current-item">
                         <p>FBR - </p>
-                        <p></p>
-                        <div></div>
+                        <p id="item-value">15</p>
+                        <div class="arrow123"></div>
                     </div>
                     <div class="info-bar__current-item">
                         <p>ICFCR - </p>
-                        <p id="item-value"></p>
-                        <div></div>
+                        <p id="item-value">15</p>
+                        <div class="arrow123"></div>
                     </div>
                     <div class="info-bar__current-item">
                         <p>ICFPR - </p>
-                        <p id="item-value"></p>
-                        <div></div>
+                        <p id="item-value">15</p>
+                        <div class="arrow123"></div>
                     </div>
                     <div class="info-bar__current-item">
                         <p>IMCPR - </p>
-                        <p></p>
-                        <div></div>
+                        <p id="item-value">15</p>
+                        <div class="arrow123"></div>
                     </div>
                     <div class="info-bar__current-item">
                         <p>IVGR - </p>
-                        <p></p>
-                        <div></div>
+                        <p id="item-value">15</p>
+                        <div class="arrow123"></div>
                     </div>
                 </div>
             </div>
@@ -142,13 +141,13 @@
                         </div>
                         <div class="sidebar__stocks-filter">
                             <div class="sidebar__stocks-item">
-                                <button>Действующие</button>
+                                <button class="filterbtn" data-filter="connected">Действующие</button>
                             </div>
                             <div class="sidebar__stocks-item">
-                                <button>Отключенные</button>
+                                <button class="filterbtn" data-filter="disabled">Отключенные</button>
                             </div>
                             <div class="sidebar__stocks-item">
-                                <button>На тестовом периоде</button>
+                                <button class="filterbtn" data-filter="test">На тестовом периоде</button>
                             </div>
                             <div class="sidebar__stocks-item">
                                 <button>Подключить пакет</button>
@@ -173,7 +172,8 @@
                     </div>
                 </div>
                 <div class="content">
-                    <div class="content__item">
+                    <div class="content__item connected">
+                        <div class="content__item-connect"><p>Подключено</p></div>
                         <div class="content__item-img">
                             <img src="/img/pack/jamaican-jerk-chicken 1.svg" alt="">
                         </div>
@@ -186,10 +186,11 @@
                             <span>Приволжский ФО РФ</span>
                         </div>
                         <div class="content__item-btn">
-                            <button>Подробнее</button>
+                            <button class="itembtn">Подробнее</button>
                         </div>
                     </div>
-                    <div class="content__item">
+                    <div class="content__item disabled">
+                        <div class="content__item-disabled"><p>Отключено</p></div>
                         <div class="content__item-img">
                             <img src="/img/pack/jamaican-jerk-chicken 1.svg" alt="">
                         </div>
@@ -202,10 +203,11 @@
                             <span>Приволжский ФО РФ</span>
                         </div>
                         <div class="content__item-btn">
-                            <button>Подробнее</button>
+                            <button class="itembtn">Подробнее</button>
                         </div>
                     </div>
-                    <div class="content__item">
+                    <div class="content__item test">
+                        <div class="content__item-test"><p>Тест</p></div>
                         <div class="content__item-img">
                             <img src="/img/pack/jamaican-jerk-chicken 1.svg" alt="">
                         </div>
@@ -218,10 +220,11 @@
                             <span>Приволжский ФО РФ</span>
                         </div>
                         <div class="content__item-btn">
-                            <button>Подробнее</button>
+                            <button class="itembtn">Подробнее</button>
                         </div>
                     </div>
-                    <div class="content__item">
+                    <div class="content__item connected">
+                        <div class="content__item-connect"><p>Подключено</p></div>
                         <div class="content__item-img">
                             <img src="/img/pack/jamaican-jerk-chicken 1.svg" alt="">
                         </div>
@@ -234,10 +237,11 @@
                             <span>Приволжский ФО РФ</span>
                         </div>
                         <div class="content__item-btn">
-                            <button>Подробнее</button>
+                            <button class="itembtn">Подробнее</button>
                         </div>
                     </div>
-                    <div class="content__item">
+                    <div class="content__item disabled">
+                        <div class="content__item-disabled"><p>Отключено</p></div>
                         <div class="content__item-img">
                             <img src="/img/pack/jamaican-jerk-chicken 1.svg" alt="">
                         </div>
@@ -250,10 +254,11 @@
                             <span>Приволжский ФО РФ</span>
                         </div>
                         <div class="content__item-btn">
-                            <button>Подробнее</button>
+                            <button class="itembtn">Подробнее</button>
                         </div>
                     </div>
-                    <div class="content__item">
+                    <div class="content__item test">
+                        <div class="content__item-test"><p>Тест</p></div>
                         <div class="content__item-img">
                             <img src="/img/pack/jamaican-jerk-chicken 1.svg" alt="">
                         </div>
@@ -266,9 +271,137 @@
                             <span>Приволжский ФО РФ</span>
                         </div>
                         <div class="content__item-btn">
-                            <button>Подробнее</button>
+                            <button class="itembtn">Подробнее</button>
                         </div>
                     </div>
+                    <div class="content__item connected">
+                        <div class="content__item-connect"><p>Подключено</p></div>
+                        <div class="content__item-img">
+                            <img src="/img/pack/jamaican-jerk-chicken 1.svg" alt="">
+                        </div>
+                        <div class="content__item-name">
+                            <h3>Пакет №1</h3>
+                            <h3>"Федеральный"</h3>
+                        </div>
+                        <div class="content__item-description">
+                            <p>Птицеводческая промышленность</p>
+                            <span>Приволжский ФО РФ</span>
+                        </div>
+                        <div class="content__item-btn">
+                            <button class="itembtn">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="content__item disabled">
+                        <div class="content__item-disabled"><p>Отключено</p></div>
+                        <div class="content__item-img">
+                            <img src="/img/pack/jamaican-jerk-chicken 1.svg" alt="">
+                        </div>
+                        <div class="content__item-name">
+                            <h3>Пакет №1</h3>
+                            <h3>"Федеральный"</h3>
+                        </div>
+                        <div class="content__item-description">
+                            <p>Птицеводческая промышленность</p>
+                            <span>Приволжский ФО РФ</span>
+                        </div>
+                        <div class="content__item-btn">
+                            <button class="itembtn">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="content__item test">
+                        <div class="content__item-test"><p>Тест</p></div>
+                        <div class="content__item-img">
+                            <img src="/img/pack/jamaican-jerk-chicken 1.svg" alt="">
+                        </div>
+                        <div class="content__item-name">
+                            <h3>Пакет №1</h3>
+                            <h3>"Федеральный"</h3>
+                        </div>
+                        <div class="content__item-description">
+                            <p>Птицеводческая промышленность</p>
+                            <span>Приволжский ФО РФ</span>
+                        </div>
+                        <div class="content__item-btn">
+                            <button class="itembtn">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="content__item connected">
+                        <div class="content__item-connect"><p>Подключено</p></div>
+                        <div class="content__item-img">
+                            <img src="/img/pack/jamaican-jerk-chicken 1.svg" alt="">
+                        </div>
+                        <div class="content__item-name">
+                            <h3>Пакет №1</h3>
+                            <h3>"Федеральный"</h3>
+                        </div>
+                        <div class="content__item-description">
+                            <p>Птицеводческая промышленность</p>
+                            <span>Приволжский ФО РФ</span>
+                        </div>
+                        <div class="content__item-btn">
+                            <button class="itembtn">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="content__item disabled">
+                        <div class="content__item-disabled"><p>Отключено</p></div>
+                        <div class="content__item-img">
+                            <img src="/img/pack/jamaican-jerk-chicken 1.svg" alt="">
+                        </div>
+                        <div class="content__item-name">
+                            <h3>Пакет №1</h3>
+                            <h3>"Федеральный"</h3>
+                        </div>
+                        <div class="content__item-description">
+                            <p>Птицеводческая промышленность</p>
+                            <span>Приволжский ФО РФ</span>
+                        </div>
+                        <div class="content__item-btn">
+                            <button class="itembtn">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="content__item test">
+                        <div class="content__item-test"><p>Тест</p></div>
+                        <div class="content__item-img">
+                            <img src="/img/pack/jamaican-jerk-chicken 1.svg" alt="">
+                        </div>
+                        <div class="content__item-name">
+                            <h3>Пакет №1</h3>
+                            <h3>"Федеральный"</h3>
+                        </div>
+                        <div class="content__item-description">
+                            <p>Птицеводческая промышленность</p>
+                            <span>Приволжский ФО РФ</span>
+                        </div>
+                        <div class="content__item-btn">
+                            <button class="itembtn">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Внести предложение</h4>
+                    </div>
+                    <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="control-label">Тема:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="control-label">Сообщение:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                        <button type="button" class="btn btn-primary">Отправить</button>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -279,6 +412,7 @@
         <script src="js/modal.js"></script>
         <script src="js/index.js"></script> -->
         <script src="js/randomise.js"></script>
+        <script src="js/filter.js"></script>
         
     </body>
 </html>
