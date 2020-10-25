@@ -10,6 +10,7 @@ body {
     font-family: Geometria, sans-serif;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 h4 {
@@ -75,7 +76,7 @@ span {
 }
 
 .content__item {
-    border: 1px solid #363740;
+    border: 1px solid #DFE0EB;
     border-radius: 6px;
     justify-self: center;
     width: 100%;
@@ -496,6 +497,7 @@ span {
     margin-top: 20px;
 }
 
+
 .sidebar__stocks-special button {
     border: 0;
     background: none;
@@ -504,6 +506,7 @@ span {
     padding-left: 0;
     max-width: 135px;
     text-align: left;
+    margin-top: 15px;
 }
 
 .modal-content {
@@ -514,8 +517,19 @@ span {
 /* modal */
 
 .btn-primary {
+    background-color:#363740;
+    border-color: #363740;
+}
+
+.btn-primary:hover {
     background-color: #848797;
     border-color: #848797;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #848797;
+    border-radius: 4px;
 }
 
 .form-control {
