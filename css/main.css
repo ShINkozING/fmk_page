@@ -26,6 +26,11 @@ p, button {
     font-weight: 300;
     font-style: normal;
     line-height: 20px;
+
+}
+
+p, span, h3, h4 {
+    cursor: default;
 }
 
 button {
