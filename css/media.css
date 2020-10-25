@@ -55,3 +55,22 @@
         margin-left: 15px;
     }
 }
+
+@media(max-width: 1090px) {
+    .input-search {
+        width: 130px;
+    }
+    .header__right-input {
+        width: 130px;
+    }
+    
+}
+
+@media(max-width: 1042px) {
+    .info-bar {
+        height: 70px;
+    }
+    .info-bar p {
+        margin-left: -1px;
+    }
+}
