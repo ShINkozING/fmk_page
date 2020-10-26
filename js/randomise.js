@@ -23,7 +23,7 @@ document.querySelector('#randomiseeur').innerHTML = result2;
 // динамическое изменение текущих индексов
 
 const divP = document.querySelectorAll('#item-value')
-let dinArrow = document.querySelectorAll('.arrow123')
+let dinArrow = document.querySelectorAll('.infor-bar__current-arrow')
 
 
 console.log(divP)

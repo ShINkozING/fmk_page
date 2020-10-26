@@ -255,24 +255,29 @@ span {
     padding: 0;
 }
 
-.dollar, .euro {
+.info-bar__exchange-dollar, .info-bar__exchange-euro {
     display: flex;
     align-items: center;
-    
+    width: 35px;
 }
 
-.dollar p, 
-.euro p {
+.info-bar__exchange-name {
+    margin-bottom: 2px;
+}
+
+.info-bar__exchange-dollar p, 
+.info-bar__exchange-euro p {
     margin-bottom: 0;
+    margin-right: 5px;
 }
 
-.dollar {
-    margin-right: 20px;
+.info-bar__exchange-dollar {
+    margin-right: 35px;
 }
 
 .arrow1,
 .arrow2 {
-    margin-left: 8px;
+    margin-left: 5px;
 }
 
 .info-bar__index {
@@ -280,6 +285,7 @@ span {
     align-items: center;
     margin-right: 50px;
     margin-left: 50px;
+    margin-bottom: 1px;
 }
 
 .info-bar__current-index {
@@ -293,6 +299,7 @@ span {
     flex-direction: row;
     margin-left: 5px;
     margin-right: 5px;
+    margin-top: 3px;
 }
 
 .info-bar__current-item p {
@@ -300,6 +307,10 @@ span {
     margin-left: 5px;
     margin-right: 5px;
 }
+
+#item-value {
+    width: 35px;
+} 
 
 /* .header-left */
 
@@ -324,7 +335,7 @@ span {
     flex-direction: row;
     align-items: center;
     margin-bottom: 0;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 .header__nav-item {
